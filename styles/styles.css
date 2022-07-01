@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background: #121417;
+  display: -ms-grid;
+  display: grid;
+  font-family: "Overpass", sans-serif;
+  font-size: 15px;
+  min-height: 100vh;
+  place-content: center;
+}
+
+main {
+  background: #252d37;
+  border-radius: 10px;
+  max-width: 375px;
+  padding: 20px;
+}
+
+main section.form {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main section.form .form__image {
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px;
+  border-radius: 50px;
+}
+
+main section.form .form__image img {
+  height: auto;
+  width: 15px;
+}
+
+main section.form h1 {
+  color: white;
+}
+
+main section.form p {
+  color: #959eac;
+}
+
+main section.form button {
+  background: #fb7413;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+  display: block;
+  outline: none;
+  padding: 20px;
+  width: 100%;
+}
+
+main section.message {
+  display: none;
+}
+/*# sourceMappingURL=styles.css.map */

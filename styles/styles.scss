@@ -1,0 +1,60 @@
+@import "variables";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background: $very-dark-blue;
+  display: grid;
+  font-family: $overpass;
+  font-size: 15px;
+  min-height: 100vh;
+  place-content: center;
+}
+main {
+  background: $dark-blue;
+  border-radius: 10px;
+  max-width: 375px;
+  padding: 20px;
+  section.form {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    .form__image {
+      background: white;
+      display: flex;
+      padding: 5px;
+      border-radius: 50px;
+      img {
+        height: auto;
+        width: 15px;
+      }
+    }
+    h1 {
+      color: $white;
+    }
+    p {
+      color: $light-grey;
+    }
+    button {
+      background: $orange;
+      border: none;
+      border-radius: 20px;
+      color: $white;
+      cursor: pointer;
+      display: block;
+      outline: none;
+      padding: 20px;
+      width: 100%;
+    }
+  }
+  section.message {
+    display: none;
+  }
+}
