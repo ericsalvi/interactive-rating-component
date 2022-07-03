@@ -16,14 +16,16 @@ body {
   font-family: "Overpass", sans-serif;
   font-size: 15px;
   min-height: 100vh;
+  padding: 25px;
   place-content: center;
 }
 
 main {
-  background: #252d37;
-  border-radius: 10px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#242932), to(#18202a));
+  background: linear-gradient(#242932, #18202a);
+  border-radius: 16px;
   max-width: 375px;
-  padding: 20px;
+  padding: 30px 24px;
 }
 
 main section.form {
@@ -37,15 +39,16 @@ main section.form {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  gap: 20px;
 }
 
 main section.form .form__image {
-  background: white;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 5px;
-  border-radius: 50px;
+  padding: 10px;
 }
 
 main section.form .form__image img {
@@ -55,22 +58,90 @@ main section.form .form__image img {
 
 main section.form h1 {
   color: white;
+  font-size: 1.467rem;
+  margin: 0;
 }
 
 main section.form p {
   color: #959eac;
+  font-size: 0.9rem;
+  letter-spacing: -0.2px;
+  line-height: 1.5;
 }
 
-main section.form button {
+main section.form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+  width: 100%;
+}
+
+main section.form form fieldset.raiting {
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0;
+}
+
+main section.form form fieldset.raiting .raiting__item input {
+  display: none;
+}
+
+main section.form form fieldset.raiting .raiting__item input:checked + label {
+  background: #7c8798;
+  color: white;
+}
+
+main section.form form fieldset.raiting .raiting__item label {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 50px;
+  color: #959eac;
+  cursor: pointer;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 4px;
+  width: 40px;
+}
+
+main section.form form fieldset.raiting .raiting__item label:hover {
+  background: #fb7413;
+  color: white;
+}
+
+main section.form form button {
   background: #fb7413;
   border: none;
-  border-radius: 20px;
+  border-radius: 50vw;
   color: white;
+  letter-spacing: 1px;
   cursor: pointer;
   display: block;
   outline: none;
-  padding: 20px;
+  padding: 15px;
+  text-transform: uppercase;
   width: 100%;
+}
+
+main section.form form button:hover {
+  background: white;
+  color: #fb7413;
 }
 
 main section.message {

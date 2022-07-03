@@ -15,22 +15,24 @@ body {
   font-family: $overpass;
   font-size: 15px;
   min-height: 100vh;
+  padding: 25px;
   place-content: center;
 }
 main {
-  background: $dark-blue;
-  border-radius: 10px;
+  background: linear-gradient($color-top, $color-bottom);
+  border-radius: 16px;
   max-width: 375px;
-  padding: 20px;
+  padding: 30px 24px;
   section.form {
     align-items: flex-start;
     display: flex;
     flex-direction: column;
+    gap: 20px;
     .form__image {
-      background: white;
-      display: flex;
-      padding: 5px;
+      background: hsla(0, 0%, 100%, 0.05);
       border-radius: 50px;
+      display: flex;
+      padding: 10px;
       img {
         height: auto;
         width: 15px;
@@ -38,20 +40,68 @@ main {
     }
     h1 {
       color: $white;
+      font-size: 1.467rem;
+      margin: 0;
     }
     p {
       color: $light-grey;
+      font-size: 0.9rem;
+      letter-spacing: -0.2px;
+      line-height: 1.5;
     }
-    button {
-      background: $orange;
-      border: none;
-      border-radius: 20px;
-      color: $white;
-      cursor: pointer;
-      display: block;
-      outline: none;
-      padding: 20px;
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
       width: 100%;
+      fieldset.raiting {
+        border: none;
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        .raiting__item {
+          input {
+            display: none;
+            &:checked + label {
+              background: $medium-grey;
+              color: $white;
+            }
+          }
+          label {
+            align-items: center;
+            background: hsla(0, 0%, 100%, 0.05);
+            border-radius: 50px;
+            color: $light-grey;
+            cursor: pointer;
+            display: inline-flex;
+            height: 40px;
+            justify-content: center;
+            padding-top: 4px;
+            width: 40px;
+            &:hover {
+              background: $orange;
+              color: $white;
+            }
+          }
+        }
+      }
+      button {
+        background: $orange;
+        border: none;
+        border-radius: 50vw;
+        color: $white;
+        letter-spacing: 1px;
+        cursor: pointer;
+        display: block;
+        outline: none;
+        padding: 15px;
+        text-transform: uppercase;
+        width: 100%;
+        &:hover {
+          background: $white;
+          color: $orange;
+        }
+      }
     }
   }
   section.message {
