@@ -16,7 +16,7 @@ body {
   font-family: "Overpass", sans-serif;
   font-size: 15px;
   min-height: 100vh;
-  padding: 25px;
+  padding: 25px 0;
   place-content: center;
 }
 
@@ -24,8 +24,8 @@ main {
   background: -webkit-gradient(linear, left top, left bottom, from(#242932), to(#18202a));
   background: linear-gradient(#242932, #18202a);
   border-radius: 16px;
-  max-width: 375px;
-  padding: 30px 24px;
+  max-width: 325px;
+  padding: 24px 24px 30px;
 }
 
 main section.form {
@@ -39,7 +39,6 @@ main section.form {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 20px;
 }
 
 main section.form .form__image {
@@ -48,7 +47,8 @@ main section.form .form__image {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 10px;
+  margin-bottom: 21px;
+  padding: 12.5px;
 }
 
 main section.form .form__image img {
@@ -60,6 +60,7 @@ main section.form h1 {
   color: white;
   font-size: 1.467rem;
   margin: 0;
+  margin-bottom: 14px;
 }
 
 main section.form p {
@@ -67,6 +68,7 @@ main section.form p {
   font-size: 0.9rem;
   letter-spacing: -0.2px;
   line-height: 1.5;
+  margin-bottom: 28px;
 }
 
 main section.form form {
@@ -77,7 +79,7 @@ main section.form form {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 30px;
+  gap: 24px;
   width: 100%;
 }
 
@@ -134,7 +136,7 @@ main section.form form button {
   cursor: pointer;
   display: block;
   outline: none;
-  padding: 15px;
+  padding: 18px 15px 12px;
   text-transform: uppercase;
   width: 100%;
 }
@@ -146,5 +148,35 @@ main section.form form button:hover {
 
 main section.message {
   display: none;
+}
+
+@media (min-width: 768px) {
+  main {
+    border-radius: 30px;
+    max-width: 412px;
+    padding: 33px 36px 30px 33px;
+  }
+  main section.form .form__image {
+    margin-bottom: 35px;
+    padding: 15px;
+  }
+  main section.form .form__image img {
+    width: 17px;
+  }
+  main section.form h1 {
+    font-size: 1.733rem;
+    margin-bottom: 11px;
+  }
+  main section.form p {
+    font-size: 1rem;
+    letter-spacing: -0.5px;
+  }
+  main section.form form {
+    gap: 32px;
+  }
+  main section.form form fieldset.raiting .raiting__item label {
+    height: 50px;
+    width: 50px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
