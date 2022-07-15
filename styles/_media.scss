@@ -1,0 +1,35 @@
+@media (min-width: 768px) {
+  main {
+    border-radius: 30px;
+    max-width: 412px;
+    padding: 33px 36px 30px 33px;
+    section.form {
+      .form__image {
+        margin-bottom: 35px;
+        padding: 15px;
+        img {
+          width: 17px;
+        }
+      }
+      h1 {
+        font-size: 1.733rem;
+        margin-bottom: 11px;
+      }
+      p {
+        font-size: 1rem;
+        letter-spacing: -0.5px;
+      }
+      form {
+        gap: 32px;
+        fieldset.raiting {
+          .raiting__item {
+            label {
+              height: 50px;
+              width: 50px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
