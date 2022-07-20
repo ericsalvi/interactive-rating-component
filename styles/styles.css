@@ -199,6 +199,8 @@ main section.form {
   main {
     border-radius: 30px;
     max-width: 412px;
+  }
+  main section {
     padding: 33px 36px 30px 33px;
   }
   main section .form__image {
@@ -222,6 +224,19 @@ main section.form {
   main section form fieldset.raiting .raiting__item label {
     height: 50px;
     width: 50px;
+  }
+  main section.message {
+    padding: 45px 36px 50px;
+  }
+  main section.message img {
+    margin-bottom: 26px;
+    max-width: 160px;
+  }
+  main section.message .message__results {
+    font-size: 0.95rem;
+    letter-spacing: 0;
+    margin-bottom: 36px;
+    padding: 9px 18px 6px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
