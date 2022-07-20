@@ -22,11 +22,12 @@ main {
   background: linear-gradient($color-top, $color-bottom);
   border-radius: 16px;
   max-width: 325px;
-  padding: 24px 24px 30px;
-  section.form {
+  transition: max-width 0.2s ease-in-out;
+  section {
     align-items: flex-start;
     display: flex;
     flex-direction: column;
+    padding: 24px 24px 30px;
     .form__image {
       background: hsla(0, 0%, 100%, 0.05);
       border-radius: 50px;
@@ -35,6 +36,7 @@ main {
       padding: 12.5px;
       img {
         height: auto;
+        user-select: none;
         width: 15px;
       }
     }
@@ -79,6 +81,8 @@ main {
             height: 40px;
             justify-content: center;
             padding-top: 4px;
+            transition: all 0.2s ease-in-out;
+            user-select: none;
             width: 40px;
             &:hover {
               background: $orange;
@@ -98,6 +102,8 @@ main {
         outline: none;
         padding: 18px 15px 12px;
         text-transform: uppercase;
+        transition: all 0.2s ease-in-out;
+        user-select: none;
         width: 100%;
         &:hover {
           background: $white;
@@ -106,7 +112,29 @@ main {
       }
     }
   }
+
   section.message {
+    align-items: center;
+    padding: 34px 24px 38px;
+    text-align: center;
+    img {
+      margin-bottom: 18px;
+      max-width: 145px;
+    }
+    .message__results {
+      background: hsla(0, 0%, 100%, 0.05);
+      border-radius: 50px;
+      color: $orange;
+      font-size: 0.9rem;
+      letter-spacing: -0.15px;
+      margin-bottom: 30px;
+      padding: 9px 12px 6px;
+    }
+    p {
+      margin-bottom: 0;
+    }
+  }
+  section.form {
     display: none;
   }
 }
