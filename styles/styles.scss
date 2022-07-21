@@ -120,6 +120,7 @@ main {
     img {
       margin-bottom: 18px;
       max-width: 145px;
+      user-select: none;
     }
     .message__results {
       background: hsla(0, 0%, 100%, 0.05);
@@ -129,12 +130,13 @@ main {
       letter-spacing: -0.15px;
       margin-bottom: 30px;
       padding: 9px 12px 6px;
+      user-select: none;
     }
     p {
       margin-bottom: 0;
     }
   }
-  section.form {
+  section.message {
     display: none;
   }
 }
