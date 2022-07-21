@@ -175,6 +175,10 @@ main section.message {
 main section.message img {
   margin-bottom: 18px;
   max-width: 145px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 main section.message .message__results {
@@ -185,13 +189,17 @@ main section.message .message__results {
   letter-spacing: -0.15px;
   margin-bottom: 30px;
   padding: 9px 12px 6px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 main section.message p {
   margin-bottom: 0;
 }
 
-main section.form {
+main section.message {
   display: none;
 }
 

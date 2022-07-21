@@ -15,10 +15,7 @@
   <title>Frontend Mentor | Interactive rating component</title>
 </head>
 <body>
-
-  
   <main>
-
     <section class="form">
       <div class="form__image"><img src="./images/icon-star.svg" alt=""></div>
       <h1>How did we do?</h1>
@@ -26,33 +23,32 @@
         Please let us know how we did with your support request. All feedback is appreciated
         to help us improve our offering!
       </p>
-      <form>
+      <form novalidate>
         <fieldset class="raiting">
           <div class="raiting__item">
-            <input type="radio" name="rating" id="1">
+            <input type="radio" name="rating" id="1" required="required">
             <label for="1">1</label>
           </div>
           <div class="raiting__item">
-            <input type="radio" name="rating" id="2">
+            <input type="radio" name="rating" id="2" required="required">
             <label for="2">2</label>
           </div>
           <div class="raiting__item">
-            <input type="radio" name="rating" id="3">
+            <input type="radio" name="rating" id="3" required="required">
             <label for="3">3</label>
           </div>
           <div class="raiting__item">
-            <input type="radio" name="rating" id="4">
+            <input type="radio" name="rating" id="4" required="required">
             <label for="4">4</label>
           </div>
           <div class="raiting__item">
-            <input type="radio" name="rating" id="5">
+            <input type="radio" name="rating" id="5" required="required">
             <label for="5">5</label>
           </div>
         </fieldset>
         <button>Submit</button>
       </form>
     </section>
-
     <section class="message">
         <div class="message__image"><img src="./images/illustration-thank-you.svg" alt=""></div> 
         <div class="message__results">You selected <span>4</span> out of 5</div>
@@ -62,8 +58,7 @@
           don’t hesitate to get in touch!
         </p>
     </section>
-
   </main>
-    
+  <script src="./scripts/scripts.js"></script>
 </body>
 </html>
