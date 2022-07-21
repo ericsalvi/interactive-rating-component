@@ -58,12 +58,12 @@ main {
       flex-direction: column;
       gap: 24px;
       width: 100%;
-      fieldset.raiting {
+      fieldset.rating {
         border: none;
         display: flex;
         justify-content: space-between;
         padding: 0;
-        .raiting__item {
+        .rating__item {
           input {
             display: none;
             &:checked + label {

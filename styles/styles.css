@@ -89,7 +89,7 @@ main section form {
   width: 100%;
 }
 
-main section form fieldset.raiting {
+main section form fieldset.rating {
   border: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -100,16 +100,16 @@ main section form fieldset.raiting {
   padding: 0;
 }
 
-main section form fieldset.raiting .raiting__item input {
+main section form fieldset.rating .rating__item input {
   display: none;
 }
 
-main section form fieldset.raiting .raiting__item input:checked + label {
+main section form fieldset.rating .rating__item input:checked + label {
   background: #7c8798;
   color: white;
 }
 
-main section form fieldset.raiting .raiting__item label {
+main section form fieldset.rating .rating__item label {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -134,7 +134,7 @@ main section form fieldset.raiting .raiting__item label {
   width: 40px;
 }
 
-main section form fieldset.raiting .raiting__item label:hover {
+main section form fieldset.rating .rating__item label:hover {
   background: #fb7413;
   color: white;
 }
@@ -229,7 +229,7 @@ main section.message {
   main section form {
     gap: 32px;
   }
-  main section form fieldset.raiting .raiting__item label {
+  main section form fieldset.rating .rating__item label {
     height: 50px;
     width: 50px;
   }
