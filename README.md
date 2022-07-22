@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [FrontendMentor.io](https://www.frontendmentor.io/solutions/order-summary-component-scss-mobilefirst-bem-semantic-html-tXyAT3PE47)
-- Live Site URL: [https://ericsalvi.github.io/order-summary-component/](https://ericsalvi.github.io/order-summary-component/)
+- Solution URL: [FrontendMentor.io](https://www.frontendmentor.io/solutions/interactive-rating-component-github-integration-from-start-to-finish-ToI-qKj8u4)
+- Live Site URL: [https://ericsalvi.github.io/interactive-rating-component/](https://ericsalvi.github.io/interactive-rating-component/)
 
 ## My process
 
@@ -49,7 +49,7 @@ Users should be able to:
 
 ### Continued development
 
-This was my first Frontend Mentor submission where I used github from the start. Kept on working on branches and commiting those changes incrementally. I would like to make utilizaing github second nature going forward for all projects I work on.
+This was my first Frontend Mentor submission where I used github from start to finish. Kept on working on branches and commiting those changes incrementally. I would like to make utilizaing github second nature going forward for all projects I work on.
 
 ## Author
 
