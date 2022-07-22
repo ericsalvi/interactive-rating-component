@@ -13,11 +13,14 @@ form.addEventListener("submit", (e) => {
   messageResults.innerHTML = ratingResponse.indexOf(true) + 1;
   formCard.style.display = "none";
   messageCard.style.display = "flex";
-  setTimeout(formRefresh, 5000);
+  setTimeout(formRefresh, 4000);
 });
 
 const formRefresh = () => {
   ratingResponse = [];
   formCard.style.display = "flex";
   messageCard.style.display = "none";
+  for (let i = 0; i < rating.length; i++) {
+    rating[i].checked = false;
+  }
 };
